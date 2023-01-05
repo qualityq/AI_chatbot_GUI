@@ -6,4 +6,4 @@
 
 -Add your API in the file using API_KEY = "enter API key here".
 
--Make sure to install PyQt, api, openai, pip.
+-Make sure to install PyQt, api, openai, pip, Python.
