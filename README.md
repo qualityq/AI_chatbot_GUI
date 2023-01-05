@@ -3,7 +3,7 @@
 
 ![Image of F.A.Q](https://i.imgur.com/N9pbua6.png)
 
--Add "api.py" file has your own API from OpenAI's website to the project folder.
+-Add "api.py" file that has your own API from OpenAI's website to the project folder.
 
 -Add your API in the file using API_KEY = "enter API key here".
 
