@@ -42,8 +42,8 @@ class ChatBot(QWidget):
         self.logo = QTextBrowser()
 
         # Set the size and style of the logo
-        self.logo.setStyleSheet("border-radius: none;")
         self.logo.insertHtml('<div style="text-align: center;"><a href="https://openai.com"><img src="icon.png" width="18" height="18"></a></div>')
+        self.logo.setStyleSheet("border: none;")
 
         # Set the openLinks property to False
         self.logo.setOpenLinks(False)
@@ -87,6 +87,7 @@ class ChatBot(QWidget):
 
     # Generates chat content using the OpenAI API.        
     def generateContent(self):
+        self.button.setCursor(Qt.WaitCursor)
         new_api_key = api.API_KEY
         def chat(prompt):
             completions = openai.Completion.create(model = "text-davinci-003", prompt = prompt, max_tokens = 1024, api_key = new_api_key)
