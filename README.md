@@ -3,8 +3,8 @@
 
 ![Image of F.A.Q](https://i.imgur.com/N9pbua6.png)
 
--Make sure to include the "api.py" file that has your own API from OpenAI's website, in your project folder.
+-Add "api.py" file has your own API from OpenAI's website to the project folder.
 
--Add your API using API_KEY = "enter API key here"
+-Add your API in the file using API_KEY = "enter API key here".
 
--Make sure to install PyQt (pip install pyqt5)
+-Make sure to install PyQt (pip install pyqt5).
