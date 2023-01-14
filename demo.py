@@ -20,7 +20,6 @@ class ChatBot(QWidget):
 
         # Create a QLineEdit widget for the user to enter a question.
         self.enterQuestion = QLineEdit()
-
         # Set the style and placeholder text for the QLineEdit widget.
         self.enterQuestion.setStyleSheet('font-size: 12px; height: 30px; border: 2px solid #343434')
         self.enterQuestion.setPlaceholderText("Enter question here...")
