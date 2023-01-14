@@ -12,7 +12,7 @@ os.system('cls')
 
 while True:
 	human = input(Fore.CYAN+Style.BRIGHT+'HUMAN: ')
-	if human == "end":
+	if human == "end": # This will end the program when the user types "end".
 		break
 	robot = chat(human)
 	print(Fore.GREEN+Style.BRIGHT+'AI: '+robot)
