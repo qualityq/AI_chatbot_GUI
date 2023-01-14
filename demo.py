@@ -102,10 +102,10 @@ class ChatBot(QWidget):
         self.textBrowser.insertHtml('<div style="text-align: center;">{}</div>'.format(aiReply))
 
     def open_website(self, url):
-        # Open the website in the default web browser when the logo is clicked.
+        # Open the website in the default web browser when the AI logo is clicked.
         QDesktopServices.openUrl(QUrl(url))
 
-# Set up a chatbot program using PyQt5.
+# Set up the Chatbot program using PyQt5.
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     demo = ChatBot()
