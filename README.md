@@ -1,4 +1,4 @@
-# AI_chatbot_GUI
+# AI Chatbot
 
 ![Image of F.A.Q](https://i.imgur.com/auWJ2f8.png/)
 
