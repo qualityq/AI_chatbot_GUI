@@ -36,17 +36,13 @@ class ChatBot(QWidget):
 
         # Create an icon widget for the AI logo.
         self.logo = QTextBrowser()
-
         # Set the size and style of the AI logo.
         self.logo.insertHtml('<div style="text-align: center;"><a href="https://openai.com"><img src="icon.png" width="18" height="18"></a></div>')
         self.logo.setStyleSheet("border: none;")
-
         # Set the openLinks property to False.
         self.logo.setOpenLinks(False)
-
         # Connect the anchorClicked signal to the open_website slot function.
         self.logo.anchorClicked.connect(self.open_website)
-
         # Add the AI logo to the layout.
         layout.addWidget(self.logo)
 
@@ -81,7 +77,7 @@ class ChatBot(QWidget):
             self.button.setStyleSheet("background-color: #343434; color: white; border-radius: 2px;")
             self.button.setCursor(Qt.ArrowCursor)
 
-    # Generates chat content using the OpenAI API.        
+    # Generates Chatbot replies using the OpenAI API.        
     def generateContent(self):
         self.button.setCursor(Qt.WaitCursor) # Adds a loading cursor while waiting for response.
         new_api_key = api.API_KEY
